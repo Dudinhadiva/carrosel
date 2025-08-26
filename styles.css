@@ -1,0 +1,144 @@
+:root {
+  --azul: #4AA3F0;
+  --amarelo: #ffffff;
+  --verde: #84539b;
+  --rosa: #eb62d4;
+  --alto-contraste-fundo: #000000;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #FFD700;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #FFF5E1;
+}
+
+header {
+  background-color: var(--azul);
+  border-radius: 0 0 20px 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: var(--amarelo);
+}
+
+.inicio-fundo {
+  background: linear-gradient(135deg, var(--rosa), var(--amarelo), var(--verde));
+  border-radius: 40px;
+  width: 100%;
+  height: 500px;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.img-inicio {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.botao-inicio {
+  background-color: var(--verde);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-family: 'Lemon', serif;
+  font-size: 2.5em;
+  color: var(--rosa);
+}
+
+#galeria {
+  background-color: var(--amarelo);
+}
+
+.fundo-galeria img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#carrossel {
+  background-color: #E8F5E9;
+  padding: 3rem 0;
+}
+
+#momentos {
+  background-color: #E3F2FD;
+  padding: 3rem 0;
+}
+
+.fundo-quiz {
+  background-color: var(--verde);
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.formulario {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--azul);
+  color: white;
+}
+
+/* Acessibilidade */
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
+
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 5px;
+}
+
+.apresenta-lista {
+  display: none;
+}
+
+.alto-contraste {
+  background-color: var(--alto-contraste-fundo) !important;
+  color: var(--alto-contraste-texto) !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+  color: var(--alto-contraste-link);
+}
+
+.alto-contraste .btn-primary,
+.alto-contraste .botao-inicio {
+  background-color: var(--alto-contraste-link);
+  color: var(--alto-contraste-fundo);
+}
